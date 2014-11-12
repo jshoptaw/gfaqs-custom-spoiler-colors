@@ -1,6 +1,6 @@
 GameFAQs Custom Spoiler Colors
 ======================================
-Adds a setting in your "Advanced Settings" (just under the "Reveal Spoilers" setting) to allow you to specify the background and text colors of GameFAQs spoiler tags. 
+Adds a setting in your "Advanced Options" (just under the "Reveal Spoilers" setting) to allow you to specify the background and text colors of GameFAQs spoiler tags.
 
 Use with one of the following browser extensions:
 

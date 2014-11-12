@@ -7,7 +7,7 @@
 // @description     Allow specification of GameFAQs spoiler tag colors
 // @updateURL       https://greasyfork.org/scripts/6426-gamefaqs-custom-spoiler-colors/code/GameFAQs%20Custom%20Spoiler%20Colors.meta.js
 // @downloadURL     https://greasyfork.org/scripts/6426-gamefaqs-custom-spoiler-colors/code/GameFAQs%20Custom%20Spoiler%20Colors.user.js
-// @website         http://otacon120.com/user-scripts/gamefaqs-related/custom-spoiler-colors/
+// @website         http://otacon120.com/scripts/custom-spoiler-colors/
 // @contributionURL https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=LgkxqunuQlKnhicHni4dzQajlENrZQbtNOuCyKJcbq1o5msoIEB0UyzAZYS&dispatch=5885d80a13c0db1f8e263663d3faee8dbd0a2170b502f343d92a90377a9956d7
 // @include         http://www.gamefaqs.com/*
 // @match           http://www.gamefaqs.com/*
@@ -84,9 +84,9 @@ if ( window.location.href === 'http://www.gamefaqs.com/user/options_advanced.htm
 				}
 			}
 		},
-		settingsForm    = document.getElementById( 'submit' ).form,
-		rvlSpoilersRow  = $( '.namelarge:contains("Reveal Spoilers")' )[0].parentNode,
-		rvlSetting      = rvlSpoilersRow.querySelector( 'select[name="resp"]' );
+		settingsForm       = document.getElementById( 'submit' ).form,
+		rvlSpoilersRow     = $( '.namelarge:contains("Reveal Spoilers")' )[0].parentNode,
+		rvlSetting         = rvlSpoilersRow.querySelector( 'select[name="resp"]' );
 
 	spColorSettings.reveal = rvlSetting[ rvlSetting.selectedIndex ].value;
 
@@ -113,10 +113,10 @@ if ( window.location.href === 'http://www.gamefaqs.com/user/options_advanced.htm
 	spColorRow.optionlarge.contain.classList.add( 'optionlarge' );
 
 	// Set tooltip text
-	spColorRow.namelarge.tooltip.title               = 'Select a color for unrevealed spoilers';
+	spColorRow.namelarge.tooltip.title                    = 'Select a color for unrevealed spoilers';
 
 	// Create setting label
-	spColorRow.namelarge.contain.innerHTML           = 'Spoiler Color ';
+	spColorRow.namelarge.contain.innerHTML                = 'Spoiler Color ';
 	spColorRow.namelarge.contain.appendChild( spColorRow.namelarge.tooltip );
 
 	// Build tooltip for "BG" label
@@ -125,24 +125,24 @@ if ( window.location.href === 'http://www.gamefaqs.com/user/options_advanced.htm
 
 	// Build tooltip for "Text" label
 	spColorRow.optionlarge.inputs.labels.text.tooltip.classList.add( 'icon', 'icon-question-sign' );
-	spColorRow.optionlarge.inputs.labels.text.tooltip.title = 'Text Color (When using "When I Hover Over Them" or "Always" settings for "Reveal Spoilers"';
+	spColorRow.optionlarge.inputs.labels.text.tooltip.title = 'Text Color (When using "When I Hover Over Them" or "Always" settings for "Reveal Spoilers")';
 		
 	// Make inputs HTML5 "color" inputs and add proper attributes
-	spColorRow.optionlarge.inputs.bg.type             =
-	spColorRow.optionlarge.inputs.text.type           = 'color';
+	spColorRow.optionlarge.inputs.bg.type                   =
+	spColorRow.optionlarge.inputs.text.type                 = 'color';
 
-	spColorRow.optionlarge.inputs.bg.id               = 'o120-spoiler-bg-color';
-	spColorRow.optionlarge.inputs.text.id             = 'o120-spoiler-text-color';
+	spColorRow.optionlarge.inputs.bg.id                     = 'o120-spoiler-bg-color';
+	spColorRow.optionlarge.inputs.text.id                   = 'o120-spoiler-text-color';
 
 	spColorRow.optionlarge.inputs.bg.classList.add( 'btn', 'o120-spoiler-color-input' );
 	spColorRow.optionlarge.inputs.text.classList.add( 'btn', 'o120-spoiler-color-input' );
 
 	// Default/saved color on page load
-	spColorRow.optionlarge.inputs.bg.value            = spColorSettings.bg;
-	spColorRow.optionlarge.inputs.text.value          = spColorSettings.text;
+	spColorRow.optionlarge.inputs.bg.value                  = spColorSettings.bg;
+	spColorRow.optionlarge.inputs.text.value                = spColorSettings.text;
 
 	// Add content to spoiler preview
-	spColorRow.optionlarge.preview.spoiler.innerHTML  = 'Text | <a href="#">Link</a>';
+	spColorRow.optionlarge.preview.spoiler.innerHTML        = 'Text | <a href="#">Link</a>';
 
 	// Put it all together
 	spColorRow.optionlarge.contain.appendChild( spColorRow.optionlarge.inputs.labels.bg.text );
