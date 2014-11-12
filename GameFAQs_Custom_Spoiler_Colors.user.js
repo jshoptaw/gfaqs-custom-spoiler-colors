@@ -3,7 +3,7 @@
 // @namespace       OTACON120
 // @author          OTACON120
 // @license         http://opensource.org/licenses/MIT
-// @version         1.0
+// @version         1.0.1
 // @description     Allow specification of GameFAQs spoiler tag colors
 // @updateURL       https://greasyfork.org/scripts/6426-gamefaqs-custom-spoiler-colors/code/GameFAQs%20Custom%20Spoiler%20Colors.meta.js
 // @downloadURL     https://greasyfork.org/scripts/6426-gamefaqs-custom-spoiler-colors/code/GameFAQs%20Custom%20Spoiler%20Colors.user.js
@@ -100,6 +100,10 @@ if ( window.location.href === 'http://www.gamefaqs.com/user/options_advanced.htm
 	\
 	#o120-spoiler-text-color {\
 		margin: 0 7px 0 3px;\
+	}\
+	\
+	.o120-spoiler-color-input {\
+		padding: 2px 3px;\
 	}');
 
 	/**
@@ -164,7 +168,7 @@ if ( window.location.href === 'http://www.gamefaqs.com/user/options_advanced.htm
 		spColorSettings.reveal = this[ this.selectedIndex ].value;
 
 		changeSpoilerColor( spColorRow.optionlarge.inputs.bg.value, spColorRow.optionlarge.inputs.text.value );
-	}
+	};
 
 	/**
 	 * Update preview color when changed
@@ -172,7 +176,7 @@ if ( window.location.href === 'http://www.gamefaqs.com/user/options_advanced.htm
 	spColorRow.optionlarge.inputs.bg.oninput   =
 	spColorRow.optionlarge.inputs.text.oninput = function() {
 		changeSpoilerColor( spColorRow.optionlarge.inputs.bg.value, spColorRow.optionlarge.inputs.text.value );
-	}
+	};
 
 	/**
 	 * Save color upon saving settings
@@ -183,5 +187,5 @@ if ( window.location.href === 'http://www.gamefaqs.com/user/options_advanced.htm
 			text:   spColorRow.optionlarge.inputs.text.value,
 			reveal: rvlSetting[ rvlSetting.selectedIndex ].value
 		} ) );
-	}
+	};
 }

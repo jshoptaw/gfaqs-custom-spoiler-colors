@@ -18,6 +18,11 @@ Use with one of the following browser extensions:
 Release Notes
 =============
 
+Version 1.0.1
+_Released 2014-11-12_
+
+*	Fixed bug which completely prevented script from functioning in Chrome
+
 Version 1.0
 -------------
 _Released 2014-11-12_
