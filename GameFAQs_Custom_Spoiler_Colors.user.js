@@ -3,7 +3,7 @@
 // @namespace       OTACON120
 // @author          OTACON120
 // @license         http://opensource.org/licenses/MIT
-// @version         1.0.1
+// @version         1.0.2
 // @description     Allow specification of GameFAQs spoiler tag colors
 // @updateURL       https://greasyfork.org/scripts/6426-gamefaqs-custom-spoiler-colors/code/GameFAQs%20Custom%20Spoiler%20Colors.meta.js
 // @downloadURL     https://greasyfork.org/scripts/6426-gamefaqs-custom-spoiler-colors/code/GameFAQs%20Custom%20Spoiler%20Colors.user.js
@@ -55,7 +55,7 @@ document.head.appendChild( spoilerCSS );
 /**
  * Settings Page
  */
-if ( window.location.href === 'http://www.gamefaqs.com/user/options_advanced.html' ) {
+if ( window.location.href === 'http://www.gamefaqs.com/user/settings_advanced.html' ) {console.log( 'test' );
 	var spColorRow      = {
 			contain:    document.createElement( 'div' ),
 			namelarge:  {
