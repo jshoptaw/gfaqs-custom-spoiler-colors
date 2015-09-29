@@ -17,6 +17,13 @@ Use with one of the following browser extensions:
 
 Release Notes
 =============
+
+Version 1.0.3
+-------------
+_Released 2015-09-29_
+
+*	Updated to account for GameFAQs updates to site URLs
+
 Version 1.0.2
 -------------
 _Released 2015-05-27_

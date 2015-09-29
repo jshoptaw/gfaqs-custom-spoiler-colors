@@ -1,12 +1,12 @@
-// ==UserScript==
+﻿// ==UserScript==
 // @name            GameFAQs Custom Spoiler Colors
 // @namespace       OTACON120
 // @author          OTACON120
 // @license         http://opensource.org/licenses/MIT
-// @version         1.0.2
+// @version         1.0.3
 // @description     Allow specification of GameFAQs spoiler tag colors
-// @updateURL       https://greasyfork.org/scripts/6426-gamefaqs-custom-spoiler-colors/code/GameFAQs%20Custom%20Spoiler%20Colors.meta.js
-// @downloadURL     https://greasyfork.org/scripts/6426-gamefaqs-custom-spoiler-colors/code/GameFAQs%20Custom%20Spoiler%20Colors.user.js
+// @updateURL       http://otacon120.com/user-script-files/meta/gamefaqs-related/custom-spoiler-colors/
+// @downloadURL     http://otacon120.com/user-script-files/script/gamefaqs-related/custom-spoiler-colors/GameFAQs_Custom_Spoiler_Colors.user.js
 // @website         http://otacon120.com/scripts/custom-spoiler-colors/
 // @contributionURL https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=LgkxqunuQlKnhicHni4dzQajlENrZQbtNOuCyKJcbq1o5msoIEB0UyzAZYS&dispatch=5885d80a13c0db1f8e263663d3faee8dbd0a2170b502f343d92a90377a9956d7
 // @include         http://www.gamefaqs.com/*
@@ -55,7 +55,7 @@ document.head.appendChild( spoilerCSS );
 /**
  * Settings Page
  */
-if ( window.location.href === 'http://www.gamefaqs.com/user/settings_advanced.html' ) {
+if ( window.location.href === 'http://www.gamefaqs.com/user/settings_advanced' ) {
 	var spColorRow      = {
 			contain:    document.createElement( 'div' ),
 			namelarge:  {
