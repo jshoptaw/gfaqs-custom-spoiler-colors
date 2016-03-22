@@ -3,7 +3,7 @@
 // @namespace       OTACON120
 // @author          OTACON120
 // @license         http://opensource.org/licenses/MIT
-// @version         1.0.3
+// @version         1.0.4
 // @description     Allow specification of GameFAQs spoiler tag colors
 // @updateURL       http://otacon120.com/user-script-files/meta/gamefaqs-related/custom-spoiler-colors/
 // @downloadURL     http://otacon120.com/user-script-files/script/gamefaqs-related/custom-spoiler-colors/GameFAQs_Custom_Spoiler_Colors.user.js
@@ -67,11 +67,11 @@ if ( window.location.href === 'http://www.gamefaqs.com/user/settings_advanced' )
 				inputs:   {
 					labels: {
 						bg:   {
-							text:    document.createTextNode( 'BG:' ),
+							text:    document.createTextNode( 'BG: ' ),
 							tooltip: document.createElement( 'i' )
 						},
 						text: {
-							text:    document.createTextNode( 'Text:' ),
+							text:    document.createTextNode( 'Text: ' ),
 							tooltip: document.createElement( 'i' )
 						}
 					},
@@ -113,7 +113,7 @@ if ( window.location.href === 'http://www.gamefaqs.com/user/settings_advanced' )
 	// Add necessary classes to conform to HTML structure
 	spColorRow.contain.classList.add( 'row' );
 	spColorRow.namelarge.contain.classList.add( 'namelarge' );
-	spColorRow.namelarge.tooltip.classList.add( 'icon', 'icon-question-sign' );
+	spColorRow.namelarge.tooltip.classList.add( 'fa', 'fa-question-circle' );
 	spColorRow.optionlarge.contain.classList.add( 'optionlarge' );
 
 	// Set tooltip text
@@ -124,11 +124,11 @@ if ( window.location.href === 'http://www.gamefaqs.com/user/settings_advanced' )
 	spColorRow.namelarge.contain.appendChild( spColorRow.namelarge.tooltip );
 
 	// Build tooltip for "BG" label
-	spColorRow.optionlarge.inputs.labels.bg.tooltip.classList.add( 'icon', 'icon-question-sign' );
+	spColorRow.optionlarge.inputs.labels.bg.tooltip.classList.add( 'fa', 'fa-question-circle' );
 	spColorRow.optionlarge.inputs.labels.bg.tooltip.title = 'Background Color';
 
 	// Build tooltip for "Text" label
-	spColorRow.optionlarge.inputs.labels.text.tooltip.classList.add( 'icon', 'icon-question-sign' );
+	spColorRow.optionlarge.inputs.labels.text.tooltip.classList.add( 'fa', 'fa-question-circle' );
 	spColorRow.optionlarge.inputs.labels.text.tooltip.title = 'Text Color (When using "When I Hover Over Them" or "Always" settings for "Reveal Spoilers")';
 		
 	// Make inputs HTML5 "color" inputs and add proper attributes

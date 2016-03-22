@@ -18,6 +18,12 @@ Use with one of the following browser extensions:
 Release Notes
 =============
 
+Version 1.0.4
+-------------
+_Released 2016-03-21_
+
+*	Updated to use newer FontAwesome classes after recent GameFAQs font update
+
 Version 1.0.3
 -------------
 _Released 2015-09-29_
